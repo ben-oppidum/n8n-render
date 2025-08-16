@@ -5,7 +5,14 @@ services:
     region: oregon
     plan: free
     branch: main
-    ...
+    envVars:
+      - key: GENERIC_TIMEZONE
+        value: Europe/Paris
+      - key: TZ
+        value: Europe/Paris
+      - key: PORT
+        value: 5678
+
 databases:
   - name: n8nDB
     region: oregon
