@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: n8n
+    env: docker
+    region: oregon
+    plan: free
+    branch: main
+    ...
+databases:
+  - name: n8nDB
+    region: oregon
+    plan: free
